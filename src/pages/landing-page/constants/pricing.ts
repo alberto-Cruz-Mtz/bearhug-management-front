@@ -1,4 +1,4 @@
-const features = ["5Gb de almacenamiento", "5Gb de almacenamiento", "5Gb de almacenamiento", "5Gb de almacenamiento","5Gb de almacenamiento", "5Gb de almacenamiento", "5Gb de almacenamiento", "5Gb de almacenamiento"]
+const features = [ "5Gb de almacenamiento", "5Gb de almacenamiento","5Gb de almacenamiento", "5Gb de almacenamiento", "5Gb de almacenamiento", "5Gb de almacenamiento"]
 
 type Plan = {
     title: string

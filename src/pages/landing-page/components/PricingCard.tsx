@@ -10,7 +10,7 @@ interface PricingCardProps {
 
 export default function PricingCard({title, price, features, isPopular}: PricingCardProps) {
     return (
-        <article className={`border-3 grid ${isPopular ? 'border-blue-600': 'border-gray-400'} shadow-[-2px_10px_27px_12px_rgba(0,_0,_0,_0.2)] rounded-xl`}>
+        <article className={`md:w-[360px] lg:w-[310px] border-3 grid ${isPopular ? 'border-blue-600': 'border-gray-400'} shadow-[-2px_10px_27px_12px_rgba(0,_0,_0,_0.2)] rounded-xl`}>
             {isPopular && <span className="py-1 w-28 text-xl text-center font-[Poppins] text-white bg-blue-600 rounded-bl-xl ml-auto">Popular</span>}
             <header className={`px-4 ${isPopular ? "pt-2" : "pt-6" } pb-4 border-b-2 space-y-2 border-gray-400`}>
                 <h6 className="text-gray-400 text-xl uppercase">{title}</h6>
