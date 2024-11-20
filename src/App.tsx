@@ -3,7 +3,7 @@ import LandingPage from "./pages/landing-page/LandingPage";
 
 export default function App() {
   return (
-    <Routes>
+    <Routes>Transparency
       <Route path="/" element={<LandingPage />} />
     </Routes>
   )

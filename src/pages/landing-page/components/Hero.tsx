@@ -9,8 +9,8 @@ interface HeroProps {
 export default function Hero({ title, description, image }: HeroProps) {
   return (
     <main className="h-[90svh] px-6 py-4 text-center flex flex-col gap-6 items-center">
-      <h2 className="font-bold text-2xl">{title}</h2>
-      <p className="">{description}</p>
+      <h2 className="font-bold font-[Poppins] text-2xl">{title}</h2>
+      <p className="font-[Poppins]">{description}</p>
       <Image
         width={350}
         height={230}

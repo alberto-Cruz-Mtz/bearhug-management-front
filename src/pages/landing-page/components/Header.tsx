@@ -1,22 +1,26 @@
 import { Switch } from "@nextui-org/switch"
 import SunIcon from "../icon/SunIcon"
 import MoonIcon from "../icon/MoonIcon"
+import useDarkMode from "../../../core/hook/useDarkMode.ts";
 
 interface HeaderProps {
     image: string,
-    title: string
+    company: string
 }
 
-export default function Header({ image, title }: HeaderProps) {
+export default function Header({ image, company }: HeaderProps) {
+    const {darkMode, toggleDarkMode} = useDarkMode()
     return (
-        <header className="h-[10-svh] flex justify-between px-4 py-3 border-b-2 border-zinc-700">
-            <article className="flex items-center gap-2">
+        <header className="sticky top-0 z-50 bg-gray-100 dark:bg-zinc-700 h-[10-svh] flex justify-between px-4 py-3 shadow-[3px_14px_14px_3px_rgba(59,_130,_246,_0.15)] dark:shadow-[3px_14px_14px_3px_rgba(149,_157,_165,_0.2)]">
+            <figure className="flex items-center gap-2">
                 <img className="w-10" src={image} alt="logo" />
-                <h1 className="text-xl">{title}</h1>
-            </article>
+                <h1 className="text-xl font-[Poppins]">{company}</h1>
+            </figure>
 
             <Switch
-                thumbIcon={({ isSelected, className }) =>
+                isSelected={darkMode}
+                onValueChange={toggleDarkMode}
+                thumbIcon={({ isSelected }) =>
                     isSelected ? (
                         <SunIcon />
                     ) : (
