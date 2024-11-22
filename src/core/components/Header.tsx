@@ -1,7 +1,7 @@
 import { Switch } from "@nextui-org/switch"
-import SunIcon from "../icon/SunIcon"
-import MoonIcon from "../icon/MoonIcon"
-import useDarkMode from "../../../core/hook/useDarkMode.ts";
+import SunIcon from "../../pages/home/icon/SunIcon.tsx"
+import MoonIcon from "../../pages/home/icon/MoonIcon.tsx"
+import useDarkMode from "../hook/useDarkMode.ts";
 
 interface HeaderProps {
     image: string,

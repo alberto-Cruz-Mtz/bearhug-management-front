@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import Header from "../../core/components/Header.tsx";
 import logo from './../../public/logo.svg';
 import Hero from "./components/Hero";
 import heroImage from './../../public/hero-image.jpg';
@@ -15,7 +15,7 @@ import {sectionFour, sectionOne, sectionThree, sectionTwo} from "./constants/sec
 const company = "Bearhug Management";
 const links = ["#","#","#"];
 
-export default function LandingPage() {
+export default function Home() {
     return (
         <>
             <Header company={company} image={logo}/>
