@@ -11,6 +11,7 @@ import ProfileCard from "./components/ProfileCard.tsx";
 import {profiles} from "./constants/profiles.ts";
 import Footer from "./components/Footer.tsx";
 import {sectionFour, sectionOne, sectionThree, sectionTwo} from "./constants/section_information.ts";
+import Logo from "../../core/components/Logo.tsx";
 
 const company = "Bearhug Management";
 const links = ["#","#","#"];
@@ -18,7 +19,7 @@ const links = ["#","#","#"];
 export default function Home() {
     return (
         <>
-            <Header company={company} image={logo}/>
+            <Header company={company} image={<Logo/>}/>
             <Hero image={heroImage} title={sectionOne.title} description={sectionOne.description}/>
             <Section wrap title={sectionTwo.title} description={sectionTwo.description}>
                 {
