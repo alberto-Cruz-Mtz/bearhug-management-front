@@ -8,14 +8,14 @@
         font-style: normal;
         font-weight: bold;
         font-display: swap;
-        src: url('./src/public/fonts/Poppins-Bold.ttf') format('truetype');
+        src: url('/fonts/Poppins-Bold.ttf') format('truetype');
     }
     @font-face {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: normal;
         font-display: swap;
-        src: url('./src/public/fonts/Poppins-Regular.ttf') format('truetype');
+        src: url('/fonts/Poppins-Regular.ttf') format('truetype');
     }
 }
 

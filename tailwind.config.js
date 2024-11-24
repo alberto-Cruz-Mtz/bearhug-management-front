@@ -1,4 +1,5 @@
 import {nextui} from "@nextui-org/theme";
+import Index from "@tailwindcss/typography";
 
 /** @type {import('tailwindcss').Config} */
 export default {

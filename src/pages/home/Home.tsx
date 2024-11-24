@@ -1,7 +1,6 @@
 import Header from "../../core/components/Header.tsx";
-import logo from './../../public/logo.svg';
 import Hero from "./components/Hero";
-import heroImage from './../../public/hero-image.jpg';
+import heroImage from '../../../public/hero-image.jpg';
 import Section from "./components/Section";
 import FeatureCard from "./components/FeatureCard.tsx";
 import {FEATURES} from "./constants/features.tsx";
@@ -42,7 +41,7 @@ export default function Home() {
                     <ProfileCard key={index} photo={item.photo} name={item.name} rol={item.rol} biography={item.biography} socialMediaUrl={item.socialMediaUrl}/>
                 ))}
             </Section>
-            <Footer logo={logo} company={company} socialMediaUrl={links}/>
+            <Footer logo={<Logo />} company={company} socialMediaUrl={links}/>
         </>
     )
 }

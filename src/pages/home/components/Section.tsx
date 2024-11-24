@@ -13,7 +13,7 @@ export default function Section({ title, description, children, wrap }: SectionP
         <section className="px-5 py-8 space-y-12">
             <article className="text-center md:w-2/3 md:mx-auto">
                 <h4 className="font-bold font-[Poppins] text-2xl md:text-3xl">{title}</h4>
-                <p className="mt-6 text-lg font-[Poppins]">{description}</p>
+                <p className="mt-6 text-lg font-sans">{description}</p>
             </article>
             {
                 wrap ? (
